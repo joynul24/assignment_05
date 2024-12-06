@@ -15,9 +15,10 @@
   </head>
   <body class="font-lexend">
     <!-- Header Section -->
-    <header class="secondary-bg">
+    <header class="sticky top-0 z-10 bg-white/10 backdrop-blur-md pb-5 lg:pb-7">
       <!-- Navner -->
-      <nav
+      <div class="secondary-bg">
+        <nav
         class="flex items-center justify-between py-4 lg:py-6 w-[95%] lg:w-[90%] mx-auto"
       >
         <!-- blog btn -->
@@ -49,26 +50,28 @@
           <h2 class="opacity-70 flex lg:gap-2 gap-1"><span>9500</span>BDT</h2>
         </div>
       </nav>
+      </div>
+
+        <!-- Toggle two buttons section-->
+        <div class="flex justify-center gap-2 lg:gap-4 mt-10 lg:mt-20">
+          <!-- btn- 1 -->
+          <button
+            class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg"
+          >
+            Donation
+          </button>
+          <!-- btn- 2 -->
+          <button
+            class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg"
+          >
+            History
+          </button>
+        </div>
     </header>
 
     <!-- Main Section -->
     <main class="p-3 lg:p-0">
-      <!-- Toggle two buttons section-->
-      <div class="flex justify-center gap-2 lg:gap-4 mt-10 lg:mt-20">
-        <!-- btn- 1 -->
-        <button
-          class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg"
-        >
-          Donation
-        </button>
-        <!-- btn- 2 -->
-        <button
-          class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg"
-        >
-          History
-        </button>
-      </div>
-
+    
       <!-- Donatin Section -->
       <section id="donation-section" class="container mx-auto mt-8 space-y-6 lg:space-y-8">
         <!-- Card -1 -->
@@ -83,12 +86,12 @@
           <div class="flex flex-col justify-between space-y-3 lg:space-y-0">
             <div>
               <button
-                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg opacity-80"
+                class="flex btn btn-xl sm:btn-sm md:btn-md lg:btn-lg opacity-80"
               >
                 <img src="images/coin.png" />
                 <span>0</span>
                 BDT
-              </button>
+              </button> 
             </div>
             <!-- card title -->
             <h1 class="text-xl font-bold">
@@ -136,7 +139,7 @@
           <div class="flex flex-col justify-between space-y-3 lg:space-y-0">
             <div>
               <button
-                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg opacity-80"
+                class="flex btn btn-xl sm:btn-sm md:btn-md lg:btn-lg opacity-80"
               >
                 <img src="images/coin.png" />
                 <span>0</span>
@@ -180,7 +183,7 @@
           <div class="flex flex-col justify-between space-y-3 lg:space-y-0">
             <div>
               <button
-                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg opacity-80"
+                class="flex btn btn-xl sm:btn-sm md:btn-md lg:btn-lg opacity-80"
               >
                 <img src="images/coin.png" />
                 <span>0</span>
