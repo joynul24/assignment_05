@@ -16,51 +16,115 @@
   <body class="font-lexend">
     <!-- Header Section -->
     <header class="secondary-bg">
-       <!-- Navner -->
-        <nav class="flex items-center justify-between py-4 lg:py-6 w-[95%]  lg:w-[90%] mx-auto">
-            <!-- blog btn -->
-        <div><button class="lg:text-xl  lg:font-semibold bg-[#B4F461] btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Blog</button></div>
+      <!-- Navner -->
+      <nav
+        class="flex items-center justify-between py-4 lg:py-6 w-[95%] lg:w-[90%] mx-auto"
+      >
+        <!-- blog btn -->
+        <div>
+          <button
+            class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+          >
+            Blog
+          </button>
+        </div>
 
         <!-- middle part -->
-         <div class="flex justify-center items-center lg:gap-4 gap-0 w-[50%] lg:w-auto">
-            <div class=""><img class="w-1/2 lg:w-auto" src="images/logo.png"></div>
-            <h1 class="hidden md:flex lg:flex text-2xl font-semibold">Donate Bangladesh</h1>
-         </div>
-
-         <!-- Budget part -->
-          <div class="flex items-center gap-2 lg:text-2xl lg
-          font-semibold">
-            <span><img class="w-5 lg:w-full" src="images/coin.png" alt=""></span>
-            <h2 class="opacity-70 flex lg:gap-2 gap-1"><span>9500</span>BDT</h2>
+        <div
+          class="flex justify-center items-center lg:gap-4 gap-0 w-[50%] lg:w-auto"
+        >
+          <div class="">
+            <img class="w-1/2 lg:w-auto" src="images/logo.png" />
           </div>
-        </nav>
+          <h1 class="hidden md:flex lg:flex text-2xl font-semibold">
+            Donate Bangladesh
+          </h1>
+        </div>
+
+        <!-- Budget part -->
+        <div class="flex items-center gap-2 lg:text-2xl lg font-semibold">
+          <span
+            ><img class="w-5 lg:w-full" src="images/coin.png" alt=""
+          /></span>
+          <h2 class="opacity-70 flex lg:gap-2 gap-1"><span>9500</span>BDT</h2>
+        </div>
+      </nav>
     </header>
 
     <!-- Main Section -->
-    <main>
-        <!-- Toggle two buttons section-->
-         <div class="flex justify-center gap-2 lg:gap-4 mt-10 lg:mt-20">
-            <!-- btn- 1 -->
-            <button class="lg:text-xl  lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg">Donation</button>
-            <!-- btn- 2 -->
-            <button class="lg:text-xl  lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg">History</button>
-         </div>
+    <main class="p-3 lg:p-0">
+      <!-- Toggle two buttons section-->
+      <div class="flex justify-center gap-2 lg:gap-4 mt-10 lg:mt-20">
+        <!-- btn- 1 -->
+        <button
+          class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg"
+        >
+          Donation
+        </button>
+        <!-- btn- 2 -->
+        <button
+          class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg"
+        >
+          History
+        </button>
+      </div>
 
-         <!-- Donatin Section -->
-          <section id="donation-section" class="container mx-auto mt-8">
+      <!-- Donatin Section -->
+      <section id="donation-section" class="container mx-auto mt-8">
 
-          <!-- Card -1 -->
-           <div class="border-2 border-gray-300 p-8 rounded-2xl gap-8 grid grid-cols-1 lg:grid-cols-2">
-            <!-- img -->
-             <div class="">
-                <img class="w-full" src="images/noakhali.png">
-             </div>
-             <!-- content -->
-              <div class="border-2 border-yellow-500">
-                <div><button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Responsive</button></div>
-              </div>
-           </div>
-          </section>
+        <!-- Card -1 -->
+        <div
+          class="border-2 border-gray-300 p-3 lg:p-8 rounded-2xl gap-8 grid grid-cols-1 lg:grid-cols-2"
+        >
+          <!-- img -->
+          <div class="">
+            <img class="w-full h-full" src="images/noakhali.png" />
+          </div>
+          <!-- content -->
+          <div class="flex flex-col justify-between space-y-3 lg:space-y-0">
+            <div>
+              <button
+                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg opacity-80"
+              >
+                <img src="images/coin.png" />
+                <span>0</span>
+                BDT
+              </button>
+            </div>
+            <!-- card title -->
+            <h1 class="text-xl font-bold">
+              Donate for Flood at Noakhali, Bangladesh
+            </h1>
+            <p class="opacity-70">
+              The recent floods in Noakhali have caused significant damage to
+              <br />
+              homes infrastructure. Your donation will help provide essential
+              <br />
+              supplies and to those affected by this disaster. Every
+              contribution, <br />
+              big or small, makes difference. Please join us in supporting the
+              relief <br />
+              efforts and making a positive impact on the lives of those in
+              need.
+            </p>
+
+            <!-- pay donate input -->
+            <div class="">
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="input input-bordered w-full py-7 mb-4"
+              />
+              <!-- btn -->
+              <button
+                class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg w-full"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

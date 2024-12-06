@@ -4,6 +4,10 @@
   font-family: "Lexend", sans-serif;
 }
 
+.hide{
+  display: none;
+}
+
 .bg-color-primary{
   background-color: #B4F461;
   color: black;
