@@ -19,61 +19,65 @@
       <!-- Navner -->
       <div class="secondary-bg">
         <nav
-        class="flex items-center justify-between py-4 lg:py-6 w-[95%] lg:w-[90%] mx-auto"
-      >
-        <!-- blog btn -->
-        <div>
-          <button
-            class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
-          >
-            Blog
-          </button>
-        </div>
-
-        <!-- middle part -->
-        <div
-          class="flex justify-center items-center lg:gap-4 gap-0 w-[50%] lg:w-auto"
+          class="flex items-center justify-between py-4 lg:py-6 w-[95%] lg:w-[90%] mx-auto"
         >
-          <div class="">
-            <img class="w-1/2 lg:w-auto" src="images/logo.png" />
+          <!-- blog btn -->
+          <div>
+            <button
+              class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+            >
+              Blog
+            </button>
           </div>
-          <h1 class="hidden md:flex lg:flex text-2xl font-semibold">
-            Donate Bangladesh
-          </h1>
-        </div>
 
-        <!-- Budget part -->
-        <div class="flex items-center gap-2 lg:text-2xl lg font-semibold">
-          <span
-            ><img class="w-5 lg:w-full" src="images/coin.png" alt=""
-          /></span>
-          <h2 class="opacity-70 flex lg:gap-2 gap-1"><span>9500</span>BDT</h2>
-        </div>
-      </nav>
+          <!-- middle part -->
+          <div
+            class="flex justify-center items-center lg:gap-4 gap-0 w-[50%] lg:w-auto"
+          >
+            <div class="">
+              <img class="w-1/2 lg:w-auto" src="images/logo.png" />
+            </div>
+            <h1 class="hidden md:flex lg:flex text-2xl font-semibold">
+              Donate Bangladesh
+            </h1>
+          </div>
+
+          <!-- Budget part -->
+          <div class="flex items-center gap-2 lg:text-2xl lg font-semibold">
+            <span
+              ><img class="w-5 lg:w-full" src="images/coin.png" alt=""
+            /></span>
+            <h2 class="opacity-70 flex lg:gap-2 gap-1"><span>9500</span>BDT</h2>
+          </div>
+        </nav>
       </div>
 
-        <!-- Toggle two buttons section-->
-        <div class="flex justify-center gap-2 lg:gap-4 pt-12 lg:pt-16 pb-8 bg-white/10 backdrop-blur-md">
-          <!-- btn- 1 -->
-          <button
-            class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg"
-          >
-            Donation
-          </button>
-          <!-- btn- 2 -->
-          <button
-            class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg"
-          >
-            History
-          </button>
-        </div>
+      <!-- Toggle two buttons section-->
+      <div
+        class="flex justify-center gap-2 lg:gap-4 pt-8 lg:pt-16 pb-7 bg-white/8 backdrop-blur-sm"
+      >
+        <!-- btn- 1 -->
+        <button
+          class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg border-none"
+        >
+          Donation
+        </button>
+        <!-- btn- 2 -->
+        <button
+          class="lg:text-xl lg:font-semibold btn btn-xl sm:btn-sm md:btn-md lg:btn-lg border-none"
+        >
+          History
+        </button>
+      </div>
     </header>
 
     <!-- Main Section -->
     <main class="p-3 lg:p-0">
-    
       <!-- Donatin Section -->
-      <section id="donation-section" class="container mx-auto mt-8 space-y-6 lg:space-y-8">
+      <section
+        id="donation-section"
+        class="container mx-auto mt-8 space-y-6 lg:space-y-8"
+      >
         <!-- Card -1 -->
         <div
           class="border-2 border-gray-300 p-3 lg:p-8 rounded-2xl gap-8 grid grid-cols-1 lg:grid-cols-2"
@@ -89,9 +93,9 @@
                 class="flex btn btn-xl sm:btn-sm md:btn-md lg:btn-lg opacity-80"
               >
                 <img src="images/coin.png" />
-                <span>0</span>
+                <span id="noakhali-donate-balance">0</span>
                 BDT
-              </button> 
+              </button>
             </div>
             <!-- card title -->
             <h1 class="text-xl font-bold">
@@ -113,13 +117,13 @@
             <!-- pay donate input -->
             <div class="">
               <input
-                type="text"
+                type="number"
                 placeholder="Write Donation Amount"
                 class="focus:border-[#B4F461] input input-bordered w-full py-7 mb-4"
               />
               <!-- btn -->
               <button
-                class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg w-full"
+                class="g:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg w-full"
               >
                 Donate Now
               </button>
@@ -142,7 +146,7 @@
                 class="flex btn btn-xl sm:btn-sm md:btn-md lg:btn-lg opacity-80"
               >
                 <img src="images/coin.png" />
-                <span>0</span>
+                <span id=" feni-donate-balance">0</span>
                 BDT
               </button>
             </div>
@@ -151,13 +155,20 @@
               Donate for Flood Relief in Feni,Bangladesh
             </h1>
             <p class="opacity-70">
-              The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+              The recent floods in Feni have devastated local communities,
+              leading to severe disruption and loss. Your generous donation will
+              help provide immediate aid, including food, clean water, and
+              medical supplies, to those affected by this calamity. Together, we
+              can offer crucial support and help rebuild lives in the aftermath
+              of this disaster. Every contribution counts towards making a real
+              difference. Please consider donating today to assist those in
+              urgent need.
             </p>
 
             <!-- pay donate input -->
             <div class="">
               <input
-                type="text"
+                type="number"
                 placeholder="Write Donation Amount"
                 class="focus:border-[#B4F461] input input-bordered w-full py-7 mb-4"
               />
@@ -186,7 +197,7 @@
                 class="flex btn btn-xl sm:btn-sm md:btn-md lg:btn-lg opacity-80"
               >
                 <img src="images/coin.png" />
-                <span>0</span>
+                <span id="quota-donate-balance">0</span>
                 BDT
               </button>
             </div>
@@ -195,13 +206,21 @@
               Aid for Injured in the Quota Movement
             </h1>
             <p class="opacity-70">
-              The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+              The recent Quota movement has resulted in numerous injuries and
+              significant hardship for many individuals. Your support is crucial
+              in providing medical assistance, rehabilitation, and necessary
+              supplies to those affected. By contributing, you help ensure that
+              injured individuals receive the care and support they need during
+              this challenging time. Every donation plays a vital role in
+              alleviating their suffering and aiding in their recovery. Please
+              consider making a donation to support these brave individuals in
+              their time of need.
             </p>
 
             <!-- pay donate input -->
             <div class="">
               <input
-                type="text"
+                type="number"
                 placeholder="Write Donation Amount"
                 class="focus:border-[#B4F461] input input-bordered w-full py-7 mb-4"
               />
@@ -216,33 +235,48 @@
         </div>
       </section>
 
+       
 
-      <!-- Modal Section -->
-      <!-- Open the modal using ID.showModal() method -->
-      <div id="modal" class="hidden">
-        <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
-  <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-  <div class="modal-box text-center">
-    <h3 class="text-2xl lg:text-4xl font-bold">Congrates!</h3>
-    <div class="flex justify-center mt-3">
-      <img src="images/coin.png">
-    </div>
-    <p class="mt-5 font-medium opacity-70">You Have Donate For Humankind</p>
-    <h1 class="text-xl font-bold mt-2">Successfully</h1>
-    <div class="mt-3">
-      <form>
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close Confirmation</button>
-      </form>
-    </div>
-   </div>
-  </dialog>
-</div>
+       <!-- History Section -->
+        <section id="histroy-secton"></section>
+   
 
+
+      <section id="modal-section" class="hidden">
+        <!-- Modal Section -->
+        <!-- Open the modal using ID.showModal() method -->
+        <div>
+          <button class="btn" onclick="my_modal_5.showModal()">
+            open modal
+          </button>
+          <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box text-center">
+              <h3 class="text-2xl lg:text-4xl font-bold">Congrates!</h3>
+              <div class="flex justify-center mt-3">
+                <img src="images/coin.png" />
+              </div>
+              <p class="mt-5 font-medium opacity-70">
+                You Have Donate For Humankind
+              </p>
+              <h1 class="text-xl font-bold mt-2">Successfully</h1>
+              <div class="mt-3">
+                <form>
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close Confirmation</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+        </div>
+      </section>
     </main>
 
     <footer class="secondary-bg h-28 lg:h-52 mt-12 lg:mt-20">
-       <!-- the footer -->
+      <!-- the footer -->
     </footer>
+
+    <!-- js file here -->
+     <script src="js/home.js"></script>
+     <script src="js/utility.js"></script>
   </body>
 </html>
