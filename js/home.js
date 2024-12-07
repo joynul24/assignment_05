@@ -1,7 +1,7 @@
-const allDonateBtn = document.getElementsByClassName('btn-donate');
-
-for (const singleDonateBtn of allDonateBtn) {
-    singleDonateBtn.addEventListener('click', function () {
-        console.log("hi i am donate btn");
-    });
-};
+// first card events
+document.getElementById('btn-donate-1').addEventListener('click', function () {
+    const inputAmount = getInputFieldValueById('input-card-1');
+    
+    const cardAmount = getTextFieldValueById('balance-card-1');
+    console.log(cardAmount);
+});

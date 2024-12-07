@@ -1,6 +1,6 @@
 // Number from string function
 
-function getSringByNumber(id) {
+function getTextFieldValueById(id) {
     const elementId = document.getElementById(id).innerText;
     const element = parseFloat(elementId);
     return element;
@@ -9,8 +9,8 @@ function getSringByNumber(id) {
 
 // Number from input string value converted
 
-function getInputValueByNumber(id) {
+function getInputFieldValueById(id) {
     const elementId = document.getElementById(id).value;
-    const element = parseFloat(elementId);
-    return element;
+    const elementValue = parseFloat(elementId);
+    return elementValue;
 };
