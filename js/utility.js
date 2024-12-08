@@ -16,7 +16,7 @@ function getInputFieldValueById(id) {
 };
 
 
-
+// time common function
 function BangladeshTimeZone() {
     const now = new Date();
     const bangladeshTime = now.toLocaleString("en-US", {

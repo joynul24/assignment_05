@@ -68,6 +68,7 @@ document.getElementById('btn-donate-1').addEventListener('click', function () {
 
     document.getElementById('input-card-1').value = '';
     document.getElementById('histroy-secton').classList.add('hidden');
+    document.getElementById('modal-section').classList.remove('hidden')
 });
 
 
@@ -174,4 +175,14 @@ document.getElementById('btn-donate-3').addEventListener('click', function () {
 
     document.getElementById('input-card-3').value = '';
     document.getElementById('histroy-secton').classList.add('hidden');
+});
+
+
+
+// onclick="my_modal_5.showModal()"
+
+
+
+document.getElementById('btn-blog').addEventListener('click', function () {
+    window.location.href = './blog.html';
 });
