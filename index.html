@@ -23,7 +23,8 @@
         >
           <!-- blog btn -->
           <div>
-            <button id="btn-blog"
+            <button
+              id="btn-blog"
               class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
             >
               Blog
@@ -47,7 +48,9 @@
             <span
               ><img class="w-5 lg:w-full" src="images/coin.png" alt=""
             /></span>
-            <h2 class="opacity-70 flex lg:gap-2 gap-1"><span id="available-balance">5500</span>BDT</h2>
+            <h2 class="opacity-70 flex lg:gap-2 gap-1">
+              <span id="available-balance">5500</span>BDT
+            </h2>
           </div>
         </nav>
       </div>
@@ -57,13 +60,15 @@
         class="flex justify-center gap-2 lg:gap-4 pt-8 lg:pt-16 pb-7 bg-white/8 backdrop-blur-sm"
       >
         <!-- btn- 1 -->
-        <button id="btn-donation"
+        <button
+          id="btn-donation"
           class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg border-none"
         >
           Donation
         </button>
         <!-- btn- 2 -->
-        <button id="btn-history"
+        <button
+          id="btn-history"
           class="lg:text-xl lg:font-semibold btn btn-xl sm:btn-sm md:btn-md lg:btn-lg border-none"
         >
           History
@@ -116,14 +121,16 @@
 
             <!-- pay donate input -->
             <div class="">
-              <input id="input-card-1"
+              <input
+                id="input-card-1"
                 type="number"
                 placeholder="Write Donation Amount"
                 class="focus:border-[#B4F461] input input-bordered w-full py-7 mb-4"
               />
               <!-- btn -->
-              <button id="btn-donate-1"
-                class="g:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg w-full"
+              <button
+                id="btn-donate-1"
+                class="donateBtns g:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg w-full"
               >
                 Donate Now
               </button>
@@ -167,14 +174,16 @@
 
             <!-- pay donate input -->
             <div class="">
-              <input id="input-card-2"
+              <input
+                id="input-card-2"
                 type="number"
                 placeholder="Write Donation Amount"
                 class="focus:border-[#B4F461] input input-bordered w-full py-7 mb-4"
               />
               <!-- btn -->
-              <button id="btn-donate-2"
-                class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg w-full"
+              <button
+                id="btn-donate-2"
+                class="donateBtns lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg w-full"
               >
                 Donate Now
               </button>
@@ -219,14 +228,16 @@
 
             <!-- pay donate input -->
             <div class="">
-              <input id="input-card-3"
+              <input
+                id="input-card-3"
                 type="number"
                 placeholder="Write Donation Amount"
                 class="focus:border-[#B4F461] input input-bordered w-full py-7 mb-4"
               />
               <!-- btn -->
-              <button id="btn-donate-3"
-                class="lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg w-full"
+              <button
+                id="btn-donate-3"
+                class="donateBtns lg:text-xl lg:font-semibold bg-[#B4F461] btn btn-xl sm:btn-sm md:btn-md lg:btn-lg w-full"
               >
                 Donate Now
               </button>
@@ -235,36 +246,39 @@
         </div>
       </section>
 
-       
+      <!-- History Section -->
+      <section
+        id="histroy-secton"
+        class="container mx-auto mt-8 space-y-6 lg:space-y-8"
+      >
+        <!-- all history -->
+      </section>
 
-       <!-- History Section -->
-        <section id="histroy-secton" class="container mx-auto mt-8 space-y-6 lg:space-y-8">
-          <!-- all history -->
-        </section>
-   
-
-
-      <section id="modal-section" class="">
+      <section id="modal-section" class="hidden">
         <!-- Modal Section -->
-        <!-- Open the modal using ID.showModal() method -->
-        <div>
-          <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-            <div class="modal-box text-center">
-              <h3 class="text-2xl lg:text-4xl font-bold">Congrates!</h3>
-              <div class="flex justify-center mt-3">
-                <img src="images/coin.png" />
-              </div>
-              <p class="mt-5 font-medium opacity-70">
-                You Have Donate For Humankind
-              </p>
-              <h1 class="text-xl font-bold mt-2">Successfully</h1>
-              <div class="mt-4">
-                <form>
-                  <button id="modal-btn-close" class="btn bg-[#B4F461]">Close Confirmation</button>
-                </form>
-              </div>
+
+        <!-- modal -->
+        <!-- The button to open modal -->
+        <label id="modal-btn" for="my_modal_6" class="btn">open modal</label>
+
+        <!-- Put this part before </body> tag -->
+        <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+        <div class="modal" role="dialog">
+          <div class="modal-box text-center">
+            <!-- modal content start -->
+            <h3 class="text-2xl lg:text-4xl font-bold">Congrates!</h3>
+            <div class="flex justify-center mt-3">
+              <img src="images/coin.png" />
             </div>
-          </dialog>
+            <p class="mt-5 font-medium opacity-70">
+              You Have Donate For Humankind
+            </p>
+            <h1 class="text-xl font-bold mt-2">Successfully</h1>
+            <!-- modal content end -->
+            <div class="justify-center modal-action">
+              <label id="close" for="my_modal_6" class="btn bg-[#B4F461]">Close Confirmation</label>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -274,7 +288,7 @@
     </footer>
 
     <!-- js file here -->
-     <script src="js/home.js"></script>
-     <script src="js/utility.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/utility.js"></script>
   </body>
 </html>

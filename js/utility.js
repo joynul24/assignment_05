@@ -25,3 +25,20 @@ function BangladeshTimeZone() {
     const bangladeshDate = new Date(bangladeshTime);
     return `Date : ${bangladeshDate.toString()}`;
 };
+
+
+
+const allDonateBtns = document.getElementsByClassName('donateBtns');
+const modal = document.getElementById('modal-btn');
+
+for(const btn of allDonateBtns) {
+    btn.addEventListener('click', function(){
+        modal.click()
+        document.getElementById('modal-section').classList.remove('hidden');
+    })
+}
+
+const close = document.getElementById('close');
+close.addEventListener('click', function(){
+    document.getElementById('modal-section').classList.add('hidden');
+})
