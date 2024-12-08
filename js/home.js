@@ -1,24 +1,22 @@
 // Events in the Donation Button
-
-
+document.getElementById('btn-donation').addEventListener('click', function () {
+    document.getElementById('histroy-secton').classList.add('hidden');
+    document.getElementById('donation-section').classList.remove('hidden');
+    document.getElementById('btn-history').classList.remove('bg-[#B4F461]');
+    document.getElementById('btn-donation').classList.add('bg-[#B4F461]');
+});
 
 
 // Events in the history Button
 document.getElementById('btn-history').addEventListener('click', function () {
-    const allCardSection = document.getElementById('donation-section');
-    allCardSection.classList.add('hidden');
-    const donationBtn = document.getElementById('btn-donation');
-    const historyBtn = document.getElementById('btn-history');
-    donationBtn.classList.remove('bg-[#B4F461]');
-    historyBtn.classList.add('bg-[#B4F461]');
+    document.getElementById('donation-section').classList.add('hidden');
+    document.getElementById('btn-donation').classList.remove('bg-[#B4F461]');
+    document.getElementById('btn-history').classList.add('bg-[#B4F461]');
     document.getElementById('histroy-secton').classList.remove('hidden');
+    document.getElementById('footer').classList.add('hidden');
 });
 
 
-// Events in the donation Button
-document.getElementById('btn-donation').addEventListener('click', function () {
-    console.log("i am donation btn");
-});
 
 
 // first card events
@@ -28,7 +26,7 @@ document.getElementById('btn-donate-1').addEventListener('click', function () {
 
     // validation
     if (isNaN(inputAmount)) {
-        alert("Please input number type!");
+        alert("Invalid donation Amount!");
         return;
     } else if (inputAmount < 0) {
         alert("Please type positive number!")
@@ -38,6 +36,10 @@ document.getElementById('btn-donate-1').addEventListener('click', function () {
     const cardBalance = getTextFieldValueById('balance-card-1');
 
     const availableBalance = getTextFieldValueById('available-balance');
+    if (availableBalance <= 0 || inputAmount > availableBalance) {
+        alert("Sorry available balance is already over!")
+        return;
+    }
 
     const updateCardBalance = inputAmount + cardBalance;
     const updateAvailableBalance = availableBalance - inputAmount;
@@ -57,7 +59,7 @@ document.getElementById('btn-donate-1').addEventListener('click', function () {
       ${inputAmount} Taka is Donated for ${cardTitle}
     `;
     const p = document.createElement('p');
-    p.classList.add('lg:text-xl', 'font-semibold', 'opacity-70', 'mt-4');
+    p.classList.add('font-semibold', 'opacity-70', 'mt-4');
     // p.innerText = getMonth() + 1 + 'Date: ' + new Date().toLocaleString("en-US", { timeZone: "Asia/Dhaka" });
     p.innerText = BangladeshTimeZone();
     newHistoryCard.appendChild(h4);
@@ -78,7 +80,7 @@ document.getElementById('btn-donate-2').addEventListener('click', function () {
 
     // validation
     if (isNaN(inputAmount)) {
-        alert("Please input number type!");
+        alert("Invalid donation Amount!");
         return;
     } else if (inputAmount < 0) {
         alert("Please type positive number!")
@@ -88,6 +90,10 @@ document.getElementById('btn-donate-2').addEventListener('click', function () {
     const cardBalance = getTextFieldValueById('balance-card-2');
 
     const availableBalance = getTextFieldValueById('available-balance');
+    if (availableBalance <= 0 || inputAmount > availableBalance) {
+        alert("Sorry available balance is already over!")
+        return;
+    }
 
     const updateCardBalance = inputAmount + cardBalance;
     const updateAvailableBalance = availableBalance - inputAmount;
@@ -107,7 +113,7 @@ document.getElementById('btn-donate-2').addEventListener('click', function () {
       ${inputAmount} Taka is Donated for ${cardTitle}
     `;
     const p = document.createElement('p');
-    p.classList.add('lg:text-xl', 'font-semibold', 'opacity-70', 'mt-4');
+    p.classList.add('font-semibold', 'opacity-70', 'mt-4');
     p.innerText = BangladeshTimeZone();
     newHistoryCard.appendChild(h4);
     newHistoryCard.appendChild(p);
@@ -127,7 +133,7 @@ document.getElementById('btn-donate-3').addEventListener('click', function () {
 
     // validation
     if (isNaN(inputAmount)) {
-        alert("Please input number type!");
+        alert("Invalid donation Amount!");
         return;
     } else if (inputAmount < 0) {
         alert("Please type positive number!")
@@ -137,6 +143,10 @@ document.getElementById('btn-donate-3').addEventListener('click', function () {
     const cardBalance = getTextFieldValueById('balance-card-3');
 
     const availableBalance = getTextFieldValueById('available-balance');
+    if (availableBalance <= 0 || inputAmount > availableBalance) {
+        alert("Sorry available balance is already over!")
+        return;
+    }
 
     const updateCardBalance = inputAmount + cardBalance;
     const updateAvailableBalance = availableBalance - inputAmount;
@@ -156,7 +166,7 @@ document.getElementById('btn-donate-3').addEventListener('click', function () {
       ${inputAmount} Taka is Donated for ${cardTitle}
     `;
     const p = document.createElement('p');
-    p.classList.add('lg:text-xl', 'font-semibold', 'opacity-70', 'mt-4');
+    p.classList.add('font-semibold', 'opacity-70', 'mt-4');
     p.innerText = BangladeshTimeZone();
     newHistoryCard.appendChild(h4);
     newHistoryCard.appendChild(p);

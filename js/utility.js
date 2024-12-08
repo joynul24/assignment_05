@@ -25,5 +25,3 @@ function BangladeshTimeZone() {
     const bangladeshDate = new Date(bangladeshTime);
     return `Date : ${bangladeshDate.toString()}`;
 };
-
-// Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
